@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#090b12" />
+  <meta name="description" content="Gokul V — engineering student, builder and curious creator." />
+  <title>Gokul V — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="liveWallpaper" aria-hidden="true"></canvas>
+  <div class="noise"></div>
+  <div class="cursor-dot"></div><div class="cursor-ring"></div>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Go to home"><span class="brand-mark">G.</span><span>GOKUL V<span class="brand-period">/</span></span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about">About</a><a href="#work">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions"><button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">☼</button><a class="nav-cta" href="#contact">Let's talk <span>↗</span></a><button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button></div>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-grid"></div>
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot"></span> ENGINEERING STUDENT · BUILDER · CREATIVE THINKER</div>
+        <h1>Ideas are<br>easy. <span class="gradient-text">Making</span><br><span class="outline-text">them real</span> is fun.</h1>
+        <p class="hero-sub">I'm Gokul — I explore technology, build useful things, and turn curious questions into working projects.</p>
+        <div class="hero-buttons"><a class="button button-primary magnetic" href="#work">Explore my work <span>↘</span></a><a class="button button-ghost" href="#contact">Get in touch <span>↗</span></a></div>
+        <div class="hero-meta"><span><b>01</b> / CREATIVE DEVELOPMENT</span><span><b>02</b> / HARDWARE + SOFTWARE</span></div>
+      </div>
+      <div class="hero-art" aria-label="Abstract animated graphic">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit orbit-three"></div>
+        <div class="core"><span>G</span><i></i></div>
+        <div class="float-tag tag-top">✳ CURIOUS BY DEFAULT</div><div class="float-tag tag-bottom">BUILD · TEST · REPEAT</div>
+        <div class="spark spark-one">✦</div><div class="spark spark-two">✳</div><div class="spark spark-three">+</div>
+      </div>
+      <a class="scroll-cue" href="#about"><span class="scroll-line"></span> SCROLL TO EXPLORE</a>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="section-kicker">01 — A LITTLE ABOUT ME</div>
+      <div class="about-layout"><h2>Part student.<br>Part <span class="gradient-text">problem-solver.</span><br>Always learning.</h2>
+        <div class="about-copy"><p class="large-copy">I’m an engineering student who enjoys the space where <strong>technology meets real-world problems.</strong> From small experiments to ambitious product concepts, I like understanding how things work — and then making them work better.</p><p>I’m currently pursuing my degree at Sri Eshwar College of Engineering. My interests span web development, embedded systems, product thinking and creative problem-solving.</p><a class="text-link" href="#contact">Have an idea? Let's connect <span>↗</span></a></div>
+      </div>
+      <div class="stats-row"><div class="stat"><strong data-count="3">0</strong><span>CORE INTERESTS</span></div><div class="stat"><strong>∞</strong><span>THINGS TO LEARN</span></div><div class="stat"><strong>2030</strong><span>EXPECTED GRADUATION</span></div></div>
+    </section>
+
+    <section class="work section" id="work">
+      <div class="section-heading"><div><div class="section-kicker">02 — SELECTED WORK</div><h2>Things I've been<br><span class="gradient-text">thinking & building.</span></h2></div><p>A mix of experiments, prototypes and product ideas. The goal is always to learn by making.</p></div>
+      <div class="filters" id="filters"><button class="filter active" data-filter="all">All work <span>05</span></button><button class="filter" data-filter="hardware">Hardware</button><button class="filter" data-filter="software">Software</button><button class="filter" data-filter="concept">Concepts</button></div>
+      <div class="project-grid">
+        <article class="project-card project-featured" data-category="software" data-project="mango"><div class="project-visual visual-mango"><div class="visual-label">M / MARKETPLACE</div><div class="mango-word">MANGO<span>®</span></div><div class="visual-caption">A local-first marketplace concept</div><div class="visual-orb"></div></div><div class="project-info"><div><span class="project-type">SOFTWARE · WEB CONCEPT</span><h3>MANGO — Local marketplace</h3><p>A marketplace concept designed to help local businesses reach more customers through a structured digital platform.</p></div><button class="arrow-button" aria-label="View MANGO details">↗</button></div></article>
+        <article class="project-card" data-category="hardware" data-project="haptibraille"><div class="project-visual visual-braille"><div class="dot-matrix"><i></i><i></i><i></i><i></i><i></i><i></i></div><span class="visual-side">TOUCHTALK / ACCESSIBILITY</span><span class="visual-number">02</span></div><div class="project-info"><div><span class="project-type">HARDWARE · ACCESSIBILITY</span><h3>HaptiBraille</h3><p>An affordable communication device concept combining Braille input with speech output.</p></div><button class="arrow-button" aria-label="View HaptiBraille details">↗</button></div></article>
+        <article class="project-card" data-category="hardware" data-project="airmouse"><div class="project-visual visual-air"><div class="air-ring"></div><div class="air-cross">＋</div><span class="visual-side">MOTION / CONTROL</span><span class="visual-number">03</span></div><div class="project-info"><div><span class="project-type">HARDWARE · EMBEDDED</span><h3>Goku's Air Mouse</h3><p>An ESP32-based idea for controlling devices through motion and physical inputs.</p></div><button class="arrow-button" aria-label="View Air Mouse details">↗</button></div></article>
+        <article class="project-card" data-category="concept" data-project="atomberg"><div class="project-visual visual-fan"><div class="fan-blade blade-a"></div><div class="fan-blade blade-b"></div><div class="fan-blade blade-c"></div><div class="fan-hub"></div><span class="visual-side">SMART HOME / COMFORT</span><span class="visual-number">04</span></div><div class="project-info"><div><span class="project-type">PRODUCT CONCEPT · IOT</span><h3>Adaptive wall fan</h3><p>A smart fan concept that detects people and adjusts direction and airflow based on comfort.</p></div><button class="arrow-button" aria-label="View Adaptive Fan details">↗</button></div></article>
+        <article class="project-card" data-category="concept" data-project="chargealarm"><div class="project-visual visual-charge"><div class="battery"><div class="battery-level"></div><div class="battery-bolt">ϟ</div></div><span class="visual-side">ENERGY / EVERYDAY TECH</span><span class="visual-number">05</span></div><div class="project-info"><div><span class="project-type">PRODUCT CONCEPT · ELECTRONICS</span><h3>Charge Alert</h3><p>A device concept to detect a full-charge condition and notify the user.</p></div><button class="arrow-button" aria-label="View Charge Alert details">↗</button></div></article>
+      </div>
+      <p class="work-note">*Project descriptions distinguish concepts and experiments from finished products.</p>
+    </section>
+
+    <section class="skills section" id="skills">
+      <div class="section-kicker">03 — MY TOOLKIT</div><div class="skills-heading"><h2>Curiosity is my<br><span class="gradient-text">favourite tool.</span></h2><p>I enjoy learning whatever a problem needs. These are areas I’m exploring and developing.</p></div>
+      <div class="skill-groups"><div class="skill-group"><span class="skill-index">01 / CODE</span><h3>Web & programming</h3><div class="skill-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>C</span></div></div><div class="skill-group"><span class="skill-index">02 / BUILD</span><h3>Hardware & electronics</h3><div class="skill-tags"><span>ESP32</span><span>Arduino IDE</span><span>Embedded systems</span><span>Prototyping</span></div></div><div class="skill-group"><span class="skill-index">03 / THINK</span><h3>Product & process</h3><div class="skill-tags"><span>Problem solving</span><span>Product ideation</span><span>UI thinking</span><span>Research</span></div></div></div>
+    </section>
+
+    <section class="contact section" id="contact"><div class="contact-glow"></div><div class="section-kicker">04 — WHAT'S NEXT?</div><h2>Have a good<br><span class="gradient-text">problem to solve?</span></h2><p>I'm always open to interesting ideas, collaborations and conversations about technology.</p><a class="contact-email" href="mailto:offc.gokul@gmail.com">offc.gokul@gmail.com <span>↗</span></a><div class="social-links"><a href="https://www.linkedin.com/in/offc-gokul-v/" target="_blank" rel="noreferrer">LINKEDIN ↗</a><a href="https://github.com/OfcMango" target="_blank" rel="noreferrer">GITHUB ↗</a><button id="copyEmail">COPY EMAIL ⧉</button></div></section>
+  </main>
+  <footer><a class="brand" href="#home"><span class="brand-mark">G.</span><span>GOKUL V<span class="brand-period">/</span></span></a><span>DESIGNED & BUILT WITH CURIOSITY.</span><a href="#home">BACK TO TOP ↑</a></footer>
+
+  <div class="modal" id="projectModal" aria-hidden="true"><div class="modal-backdrop" data-close></div><div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="modal-close" data-close aria-label="Close">×</button><span class="project-type" id="modalType"></span><h2 id="modalTitle"></h2><p id="modalDescription"></p><div class="modal-status" id="modalStatus"></div><a class="text-link" href="#contact" id="modalContact">Discuss a similar idea <span>↗</span></a></div></div>
+  <div class="toast" id="toast">Email copied!</div>
+  <script src="script.js"></script>
+</body>
+</html>
